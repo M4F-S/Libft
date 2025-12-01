@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include "libft.h"
 
 char	*ft_strdup(const char *src)
 {
@@ -30,6 +30,6 @@ char	*ft_strdup(const char *src)
 		new_str[i] = src[i];
 		i++;
 	}
-	new_str = '\0';
+	new_str[len] = '\0';
 	return (new_str);
 }

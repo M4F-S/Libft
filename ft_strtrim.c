@@ -23,7 +23,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 	start = 0;
 	while (s1[start] && ft_strchr(set, s1[start]))
 		start++;
-	end + ft_strlen(s1);
+	end = ft_strlen(s1);
 	while (end > start && ft_strchr(set, s1[end - 1]))
 		end--;
 	str = (char *)malloc(sizeof(char) * (end - start + 1));

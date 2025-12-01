@@ -10,9 +10,9 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
+#include "libft.h"
 
-int	strncmp(const char *s1, const char *s2, size_t n)
+int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
 	size_t	i;
 
@@ -23,5 +23,5 @@ int	strncmp(const char *s1, const char *s2, size_t n)
 	{
 		i++;
 	}
-	return ((unsignedcchar)s1[i] - (unsignedcgar)s2[i]);
+	return ((unsigned char)s1[i] - (unsigned char)s2[i]);
 }

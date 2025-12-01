@@ -10,7 +10,9 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*strchr(const char *s, int c)
+#include "libft.h"
+
+char	*ft_strchr(const char *s, int c)
 {
 	while (*s)
 	{
@@ -22,7 +24,7 @@ char	*strchr(const char *s, int c)
 	}
 	if ((char)c == '\0')
 	{
-		return ((char *s)c);
+		return ((char *)s);
 	}
 	return (0);
 }

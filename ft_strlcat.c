@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
+#include "libft.h"
 
 size_t	ft_strlcat(char *dest, const char *src, size_t size)
 {
@@ -31,7 +31,7 @@ size_t	ft_strlcat(char *dest, const char *src, size_t size)
 	j = 0;
 	while (src[j] && (i + 1) < size)
 	{
-		dest[i] = dest[j];
+		dest[i] = src[j];
 		i++;
 		j++;
 	}
